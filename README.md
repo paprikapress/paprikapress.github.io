@@ -1,2 +1,0 @@
-# paprikapress.github.io
-test
