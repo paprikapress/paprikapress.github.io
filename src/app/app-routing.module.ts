@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules,RouterModule, Routes } from '@angular/router';
 import {ChildComponent} from "./child/child.component";
 import {PageNotFoundComponent} from "./page-not-found/page-not-found.component";
+import {FavoritecolorComponent} from "./favouritecolor/favouritecolor.component";
 
 const routes: Routes = [
   {
@@ -9,8 +10,12 @@ const routes: Routes = [
     component: ChildComponent
   },
 
+  { path: 'favouritecolor',
+    component: FavoritecolorComponent },  // Wildcard route for a 404 page
+
   { path: 'page',
     component: PageNotFoundComponent },  // Wildcard route for a 404 page
+
 ];
 
 
