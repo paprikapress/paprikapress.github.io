@@ -24,13 +24,16 @@ export class FavoritecolorComponent {
   }
   submit(){
 
-    console.log("Form Submitted! You entered:"  + this.reactiveForm.value.firstname )
+    // console.log("Form Submitted! You entered:"  + this.reactiveForm.value.firstname )
     alert("Your answer:"  + JSON.stringify(this.reactiveForm.value) )
+    this.reactiveForm.controls['firstname'].disable();
     // alert("this.reactiveForm.value:"  + JSON.stringify(this.reactiveForm.value) )
   }
 
   reset() {
     console.log("Form Reset !")
+    this.reactiveForm.controls['firstname'].enable();
+
 
   }
 }
